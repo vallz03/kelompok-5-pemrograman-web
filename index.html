@@ -1,0 +1,139 @@
+<!---Nama Judul-->
+<h2 style="text-align:center; margin-bottom:20px;">Daftar Anggota Kelompok</h2>
+
+<!---Daftar Nama Kelompok-->
+<div class="list">
+  <a href="#Rangga Ivanda Pramudya" class="btn">Rangga Ivanda Pramudya - 1462500066</a>
+  <a href="#Ariski Wahyudi" class="btn">Ariski Wahyudi - 1462500074</a>
+  <a href="#Muhammad Rafif Al Azhar" class="btn">Muhammad Rafif Al Azhar - 1462500078</a>
+  <a href="#Lukluk Annajiah" class="btn">Lukluk Annajiah - 1462500077</a>
+  <a href="#Rivaldy Ilham Arianto" class="btn">Rivaldy Ilham Arianto - 1462500060</a>
+</div>
+
+<!-- Info detail (card) -->
+<div id="Rangga Ivanda Pramudya" class="info">
+  <div class="card">
+    <img src="https://via.placeholder.com/150" alt="Foto Rangga" class="foto"> <!---Foto Anggota 1-->
+    <h3>Rangga Ivanda Pramudya</h3>
+    <p><b>NIM:</b> 1462500066</p>
+    <p><b>Hobi:</b> Main Game</p>
+    <a href="#" class="close">Tutup</a><!----Kolom Close/Tutup-->
+  </div>
+</div>
+
+<div id="Ariski Wahyudi" class="info">
+  <div class="card">
+    <img src="https://via.placeholder.com/150" alt="Foto Anggota 2" class="foto"> <!---Foto Anggota 2-->
+    <h3>Ariski Wahyudi</h3>
+    <p><b>NIM:</b> 1462500074</p>
+    <p><b>Hobi:</b> Main Catur</p>
+    <a href="#" class="close">Tutup</a><!----Kolom Close/Tutup-->
+  </div>
+</div>
+
+<div id="Muhammad Rafif Al Azhar" class="info">
+  <div class="card">
+    <img src="https://files.catbox.moe/629ge0.webp" alt="Foto Anggota 3" class="foto"> <!---Foto Anggota 3-->
+    <h3>Muhammad Rafif Al Azhar</h3>
+    <p><b>NIM:</b> 1462500078</p>
+    <p><b>Hobi:</b> Renang</p>
+    <a href="#" class="close">Tutup</a><!----Kolom Close/Tutup-->
+  </div>
+</div>
+
+<div id="Lukluk Annajiah" class="info">
+  <div class="card">
+    <img src="https://files.catbox.moe/9j10ki.jpg" alt="Foto Anggota 4" class="foto"> <!---Foto Anggota 4-->
+    <p><b>NIM:</b> 1462500077</p>
+    <p><b>Hobi:</b> Nonton Drakor</p>
+    <a href="#" class="close">Tutup</a><!----Kolom Close/Tutup-->
+  </div>
+</div>
+
+<div id="Rivaldy Ilham Arianto" class="info">
+  <div class="card">
+    <img src="https://files.catbox.moe/nztcdn.jpg" alt="Foto Anggota 5" class="foto"> <!---Foto Anggota 5-->
+    <h3>Rivaldy Ilham Arianto</h3>
+    <p><b>NIM:</b> 1462500060</p>
+    <p><b>Hobi:</b> Futsal</p>
+    <a href="#" class="close">Tutup</a> <!----Kolom Close/Tutup-->
+  </div>
+</div>
+
+<!---- Tampilan / File CSS-->
+<style>
+body {
+  background: url("https://files.catbox.moe/vfxy2j.jpeg") no-repeat center center fixed; 
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+/* Daftar tombol anggota */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+}
+.btn {
+  display: block;
+  padding: 12px;
+  text-align: center;
+  background: rgba(0,115,170,0.9);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: rgba(0,81,119,0.9);
+}
+
+/* Card info */
+.info {
+  display: none;
+  margin-top: 20px;
+}
+.info:target {
+  display: block;
+}
+.card {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.7); /* transparan biar bg terlihat */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  text-align: center;
+  color: white;
+}
+.card h3 {
+  margin-bottom: 10px;
+  color: #ffd700;
+}
+.foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  border: 3px solid white;
+}
+.close {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 14px;
+  background: #e74c3c;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.close:hover {
+  background: #c0392b;
+}
+</style>
+
